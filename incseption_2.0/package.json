@@ -1,0 +1,22 @@
+{
+  "name": "agrichain",
+  "version": "1.0.0",
+  "description": "Blockchain-enabled agricultural supply chain tracking system",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend",
+    "contracts"
+  ],
+  "scripts": {
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install && cd ../contracts && npm install",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:contracts": "cd contracts && npx hardhat node",
+    "build:frontend": "cd frontend && npm run build",
+    "test:contracts": "cd contracts && npx hardhat test"
+  },
+  "keywords": ["blockchain", "supply-chain", "ethereum", "agriculture"],
+  "author": "",
+  "license": "MIT"
+}
